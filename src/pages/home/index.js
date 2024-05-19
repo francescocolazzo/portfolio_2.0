@@ -2,11 +2,10 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
+import { introdata, meta } from "../../content_op";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
-  console.log(`${process.env.PUBLIC_URL + '/' + introdata.my_img}` );
   return (
     <HelmetProvider>
       <section id="home" className="home">
@@ -35,10 +34,11 @@ export const Home = () => {
                       autoStart: true,
                       loop: true,
                       deleteSpeed: 1,
+                      delay: 20
                     }}
                   />
                 </h1>
-                <p className="mb-1x">{introdata.description}</p>
+                {/*<p className="mb-1x">{introdata.description}</p */}
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">

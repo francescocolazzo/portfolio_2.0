@@ -9,7 +9,7 @@ import {
   FaTwitch,
   FaInstagram,
 } from "react-icons/fa";
-import { socialprofils } from "../../content_option";
+import { socialprofils } from "../../content_op";
 
 export const Socialicons = (params) => {
   return (

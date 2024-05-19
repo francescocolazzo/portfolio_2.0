@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { meta } from "../../content_option";
+import { meta } from "../../content_op";
 import { FaGithub } from "react-icons/fa";
 import axios from "axios";
 
