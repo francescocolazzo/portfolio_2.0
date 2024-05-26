@@ -40,7 +40,7 @@ export const About = () => {
             <h3 className="color_sec py-4">Work Timline</h3>
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
+            <table className="table caption-top caption-top-1">
               <tbody>
                 {worktimeline.map((data, i) => {
                   return (
@@ -93,7 +93,7 @@ export const About = () => {
               );
             })}
           </Col>
-        </Row> */}s
+        </Row> */}
       </Container>
     </HelmetProvider>
   );

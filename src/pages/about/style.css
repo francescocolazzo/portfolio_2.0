@@ -98,3 +98,7 @@
         transform: translateZ(0);
     }
 }
+
+.table {
+    --bs-table-bg: var(--primary-color);
+}

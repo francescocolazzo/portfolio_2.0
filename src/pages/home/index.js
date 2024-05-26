@@ -14,9 +14,9 @@ export const Home = () => {
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
+        <div className="intro_sec d-block d-lg-flex align-items-center justify-content-evenly">
           <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
+            className="h_bg-image order-1 order-lg-2 h-50"
             style={{  backgroundImage: `url(${introdata.my_img})` }}
           ></div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
