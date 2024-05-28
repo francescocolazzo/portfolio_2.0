@@ -31,9 +31,10 @@ section {
 }
 
 .intro_sec {
-    height: calc(110vh - 60px);
+    /* height: calc(110vh - 60px); */
     min-height: 400px;
-    /* margin-top: -60px; */
+    margin-top: 80px;
+    flex-direction: column-reverse;
 }
 
 @media (max-width:991.98px) {
@@ -51,13 +52,9 @@ section {
     background-size: cover !important;
 }  */
 
-@media (max-width:991.98px) {
-    .intro_sec .text,
-    .intro_sec .h_bg-image {
-        width: 100%;
-        margin-top: 90px;
-        /* background-position: center; */
-    }
+
+.text {
+  height: 250px !important;
 }
 
 .intro_sec .intro {
@@ -66,10 +63,26 @@ section {
 }
 
 @media (max-width:991.98px) {
+    .intro_sec .text,
+    .intro_sec .h_bg-image {
+        width: 100%;
+        margin-top: 60px;
+        /* background-position: center; */
+    }
+
     .intro_sec .intro {
         max-width: 700px;
+        min-height: 250px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .intro_btn-action {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ac_btn {
+        margin-right: 0px !important;
     }
 }
 
