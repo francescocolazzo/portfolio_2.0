@@ -15,11 +15,11 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center justify-content-evenly">
-          <div
-            className="h_bg-image order-1 order-lg-2 h-50"
+          {/* <div
+            className="h_bg-image order-2 order-lg-2 h-50"
             style={{  backgroundImage: `url(${introdata.my_img})` }}
-          ></div>
-          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
+          ></div> */}
+          <div className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
@@ -33,8 +33,8 @@ export const Home = () => {
                       ],
                       autoStart: true,
                       loop: true,
-                      deleteSpeed: 1,
-                      delay: 20
+                      deleteSpeed: 30,
+                      delay: 50
                     }}
                   />
                 </h1>

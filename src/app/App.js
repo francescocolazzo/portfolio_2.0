@@ -6,10 +6,10 @@ import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { BoxGeometry, SphereGeometry } from "three";
-import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
-import Scene from "../components/Scene";
+// import { Canvas, useFrame } from "@react-three/fiber";
+// import { BoxGeometry, SphereGeometry } from "three";
+// import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
+// import Scene from "../components/Scene";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();

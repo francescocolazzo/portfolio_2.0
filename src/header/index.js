@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext, socialprofils } from "../content_op";
+import { introdata, logotext, socialprofils } from "../content_op";
 import Themetoggle from "../components/themetoggle";
+import ImageModal from "../components/ImageModal";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isShowed, SetShowed] = useState(false);
+  const handleShowImg = () => {
+    SetShowed(!isShowed);
+  }
 
+
+  const [isActive, setActive] = useState("false");
   const handleToggle = () => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
@@ -17,9 +23,18 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="header-absolute d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/">
+          <div className="d-flex ">
+          <div
+            className="header_img"
+            style={{  backgroundImage: `url(${introdata.my_img})`}}
+            onClick={handleShowImg}
+          ></div>
+             <Link className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
+          
+          </div>
+         
           <div className="d-flex align-items-center">
             <Themetoggle />
             <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -74,6 +89,7 @@ const Headermain = () => {
           </div>
         </div>
       </header>
+      <ImageModal show={isShowed} onHide={()=> SetShowed(!isShowed)} imageUrl={introdata.my_img} />
       <div className="br-top"></div>
       <div className="br-bottom"></div>
       <div className="br-left"></div>

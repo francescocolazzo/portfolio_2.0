@@ -1,0 +1,6 @@
+.modal_img {
+    display: flex;
+    min-height: 600px;
+    border-radius: 8px;
+    background-size: cover !important;
+}

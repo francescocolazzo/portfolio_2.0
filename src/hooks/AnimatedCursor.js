@@ -109,7 +109,8 @@ function CursorCore({
       'textarea',
       'button',
       '.link',
-      '.po_item'
+      '.po_item',
+      '.header_img'
     ]
   }) {
     const cursorOuterRef = useRef()
