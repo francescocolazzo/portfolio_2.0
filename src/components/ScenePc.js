@@ -49,7 +49,6 @@ function Model(props) {
     //props.reference.current.style.width = window.innerWidth < 768 ? '100%': '70vw';
     //props.reference.current.style.height = window.innerWidth < 900 ? '100%': '40vh';
 
-
     //  1400 x 950
   });
 
