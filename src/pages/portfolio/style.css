@@ -33,7 +33,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--overlay-color);
-    z-index: 1;
+    /* z-index: 1; */
     display: flex;
     justify-content: center;
     flex-direction: column;

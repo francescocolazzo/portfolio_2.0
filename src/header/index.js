@@ -20,9 +20,12 @@ const Headermain = () => {
 
   useEffect(() => {
     const section = document.querySelector(".intro_sec_2");
-
     if (section && !isActive) {
       section.style = "display:none";
+    }
+    if (isShowed && !isActive) {
+      console.log(isActive,isShowed);
+      SetShowed(!isShowed);
     }
 
     return () => {
@@ -30,7 +33,7 @@ const Headermain = () => {
         section.style = "display:block";
       }
     };
-  }, [isActive]);
+  }, [isActive, isShowed]);
 
   return (
     <>
