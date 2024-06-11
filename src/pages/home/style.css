@@ -31,35 +31,36 @@ section {
 }
 
 .intro_sec {
-    /* height: calc(110vh - 60px); */
-    min-height: 400px;
-    margin-top: 80px;
+    width: 50%;
+    min-height: 300px;
     flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    
 }
 
-@media (max-width:991.98px) {
-    .intro_sec {
-        display: block;
-        height: auto!important;
-    }
+.intro_sec_2{
+   width: 50%;
 }
 
-/* .intro_sec .text,
-.intro_sec .h_bg-image {
-    width: 100%;
-    margin-top: 80px;
-    border-radius: 8px;
-    background-size: cover !important;
-}  */
-
+.home{
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+ }
 
 .text {
-  height: 250px !important;
+  height: 200px !important;
 }
 
 .intro_sec .intro {
     max-width: 450px;
     margin: 0 auto;
+}
+
+.intro_btn-action {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media (max-width:991.98px) {
@@ -72,7 +73,7 @@ section {
 
     .intro_sec .intro {
         max-width: 700px;
-        min-height: 250px;
+        min-height: 300px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -84,6 +85,28 @@ section {
     .ac_btn {
         margin-right: 0px !important;
     }
+
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+      }
+    .intro_sec {
+        height: 65vh;
+        width: 100%;
+        justify-content: center;
+        padding-left: 0px !important;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .intro_sec_2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+     }
 }
 
 @media (max-width:1024px ) {
@@ -217,4 +240,41 @@ section {
         left: 50%;
         transform: translate(-50%, 50%);
     }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: inter;
+  color: black;
+  background: #202025;
+}
+
+.content {
+  width: 334px;
+  height: 216px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 10px;
+  width: 668px;
+  height: 432px;
+  transform: scale(0.5);
+  transform-origin: top left;
 }

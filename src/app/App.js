@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
@@ -6,10 +6,6 @@ import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
-// import { Canvas, useFrame } from "@react-three/fiber";
-// import { BoxGeometry, SphereGeometry } from "three";
-// import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
-// import Scene from "../components/Scene";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -22,10 +18,7 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 export default function App() {
   return (
-  //  <Canvas >
       <Router basename={process.env.PUBLIC_URL}>
-       
-        {/* <Scene /> */}
         <div className="cursor__dot">
           <AnimatedCursor
             innerSize={15}
@@ -38,10 +31,8 @@ export default function App() {
         </div>
         <ScrollToTop>
           <Headermain />
-
           <AppRoutes />
         </ScrollToTop>
       </Router>
-   // </Canvas>
   );
 }

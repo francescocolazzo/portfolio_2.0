@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { introdata, logotext, socialprofils } from "../content_op";
+import { introdata, logotext, copyright, socialprofils } from "../content_op";
 import Themetoggle from "../components/themetoggle";
 import ImageModal from "../components/ImageModal";
 
@@ -10,8 +10,7 @@ const Headermain = () => {
   const [isShowed, SetShowed] = useState(false);
   const handleShowImg = () => {
     SetShowed(!isShowed);
-  }
-
+  };
 
   const [isActive, setActive] = useState("false");
   const handleToggle = () => {
@@ -19,22 +18,35 @@ const Headermain = () => {
     document.body.classList.toggle("ovhidden");
   };
 
+  useEffect(() => {
+    const section = document.querySelector(".intro_sec_2");
+
+    if (section && !isActive) {
+      section.style = "display:none";
+    }
+
+    return () => {
+      if (section && !isActive) {
+        section.style = "display:block";
+      }
+    };
+  }, [isActive]);
+
   return (
     <>
       <header className="fixed-top site__header">
         <div className="header-absolute d-flex align-items-center justify-content-between">
           <div className="d-flex ">
-          <div
-            className="header_img"
-            style={{  backgroundImage: `url(${introdata.my_img})`}}
-            onClick={handleShowImg}
-          ></div>
-             <Link className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
-          
+            <div
+              className="header_img"
+              style={{ backgroundImage: `url(${introdata.my_img})` }}
+              onClick={handleShowImg}
+            ></div>
+            <Link className="navbar-brand nav_ac" to="/">
+              {logotext}
+            </Link>
           </div>
-         
+
           <div className="d-flex align-items-center">
             <Themetoggle />
             <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -80,16 +92,44 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-              <a href={socialprofils.facebook} rel="noopener noreferrer" target="_blank" >Facebook</a>
-              <a href={socialprofils.github} rel="noopener noreferrer" target="_blank">Github</a>
-              <a href={socialprofils.linkedin} rel="noopener noreferrer" target="_blank" >Linkedin</a>
-              <a href={socialprofils.instagram} rel="noopener noreferrer" target="_blank" >Instagram</a>
+              <a
+                href={socialprofils.facebook}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Facebook
+              </a>
+              <a
+                href={socialprofils.github}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Github
+              </a>
+              <a
+                href={socialprofils.linkedin}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+              <a
+                href={socialprofils.instagram}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Instagram
+              </a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            <p className="copyright m-0">copyright __ {copyright}</p>
           </div>
         </div>
       </header>
-      <ImageModal show={isShowed} onHide={()=> SetShowed(!isShowed)} imageUrl={introdata.my_img} />
+      <ImageModal
+        show={isShowed}
+        onHide={() => SetShowed(!isShowed)}
+        imageUrl={introdata.my_img}
+      />
       <div className="br-top"></div>
       <div className="br-bottom"></div>
       <div className="br-left"></div>

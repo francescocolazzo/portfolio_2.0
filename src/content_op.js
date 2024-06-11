@@ -1,4 +1,5 @@
 const logotext = "Francesco";
+const copyright = "ColazzoFrancesco";
 const meta = {
   title: "Francesco Colazzo",
   description: "I’m Francesco Colazzo FullStack developer",
@@ -70,14 +71,6 @@ const skills = [
   },
 ];
 
-// const services = [
-//   {
-//     title: "",
-//     description:
-//       "",
-//   }
-// ];
-
 const contactConfig = {
   EMAIL: `${process.env.REACT_APP_EMAIL}`,
   description:
@@ -98,9 +91,9 @@ export {
   dataabout,
   worktimeline,
   skills,
-  //services,
   introdata,
   contactConfig,
   socialprofils,
   logotext,
+  copyright
 };

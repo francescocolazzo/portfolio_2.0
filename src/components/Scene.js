@@ -72,8 +72,8 @@ export default function Scene() {
       <directionalLight position={[0, 0, 2]} intensity={0.5} />
       <ambientLight intensity={0.7} />
       <OrbitControls />
-      {/* <Sphere position={[1, 0, 0]} size={[2, 30, 20]}  /> */}
-      <Torus position={[0, 0, 0]} size={[2, 0.2, 1000, 40]} color={"red"} />
+      <Sphere position={[10, 2, 0]} size={[2, 30, 20]}  />
+      {/* <Torus position={[0, 0, 0]} size={[2, 0.2, 1000, 40]} color={"red"} /> */}
 
       {/* <group position={[0,-2,0]}>
       <Cube position={[1, 0, 0]} color={"green"} size={[1, 1, 1]}></Cube>

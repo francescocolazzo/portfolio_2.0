@@ -33,6 +33,8 @@
     height: 50px;
     font-weight: bold;
     z-index: 1000;
+    align-items: center;
+    display: flex;
 }
 
 .header-absolute{
