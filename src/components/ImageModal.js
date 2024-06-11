@@ -11,7 +11,7 @@ export default function ImageModal(props) {
       size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      style={{ marginLeft: ml ? '-15%' : '' }}    >
+      style={{ marginLeft: ml ? '-15%' : '-20%' }}    >
       <Modal.Body>
         <div
           className="modal_img"

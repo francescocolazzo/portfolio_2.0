@@ -96,11 +96,14 @@ section {
     .intro_sec {
         height: 65vh;
         width: 100%;
-        justify-content: center;
+        justify-content: flex-start;
         padding-left: 0px !important;
+      
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
+        flex-direction: column;
+    }
+    .intro_btn-action{
+        padding-bottom: 0px !important;
     }
     .intro_sec_2{
         width: 100%;
