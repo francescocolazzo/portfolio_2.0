@@ -59,7 +59,6 @@ export const Home = () => {
         </div>
         <div className="intro_sec_2">
           <div className="intro_sec_3">
-            <div style={{ paddingRight: "10px" }}>click on</div>
             <div className="intro_sec_4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
