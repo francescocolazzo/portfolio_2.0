@@ -85,6 +85,7 @@ export const Home = () => {
 
           <ScenePc />
         </div>
+        {/* {JSON.stringify(window.innerWidth)} */}
       </section>
     </HelmetProvider>
   );
