@@ -54,15 +54,15 @@ function Model(props) {
         canvas.style.height = "69.8vh";
         break;
       case window.innerWidth >= 2268:
-        canvas.style.width = "40.4vw";
-        canvas.style.height = "72.5vh";
+        canvas.style.width = "40.9vw";
+        canvas.style.height = "72.7vh";
         break;
       case window.innerWidth >= 2016:
-        canvas.style.width = "40vw";
+        canvas.style.width = "40.6vw";
         canvas.style.height = "70.2vh";
         break;
       case window.innerWidth >= 1890:
-        canvas.style.width = "39.3vw";
+        canvas.style.width = "40.44vw";
         canvas.style.height = "67.5vh";
         break;
       case window.innerWidth >= 1680:
@@ -70,7 +70,7 @@ function Model(props) {
         canvas.style.height = "69.4vh";
         break;
       case window.innerWidth >= 1512:
-        canvas.style.width = "40.4vw";
+        canvas.style.width = "39.6vw";
         canvas.style.height = "70vh";
         break;
       case window.innerWidth >= 1374:
