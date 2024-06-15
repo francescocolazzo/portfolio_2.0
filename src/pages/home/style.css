@@ -279,9 +279,10 @@ body {
 .content {
   width: 334px;
   height: 216px;
-  background: #f0f0f0;
+  /*background: #f0f0f0;*/
   border-radius: 3px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0;
 }
 
